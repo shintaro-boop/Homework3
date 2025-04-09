@@ -1,0 +1,6 @@
+f = open('task1_data.txt', encoding='utf-8')
+c = list(f.read())
+res = ''.join(w for w in c if not w.isdigit())
+f.close()
+file = open ('task1_answer.txt', 'w', encoding='utf-8')
+file.write(res)
